@@ -1,10 +1,12 @@
 import './App.css'
-import { PrincipalWeather } from './components/card'
+import { Button } from './components/buttonlocation'
+import { PrincipalWeather } from './components/principalweather'
 
 function App () {
   return (
     <>
       <PrincipalWeather />
+      <Button />
     </>
   )
 }
