@@ -5,7 +5,7 @@ import { PrincipalWeather } from './components/cardsweather'
 function App () {
   return (
     <>
-      <PrincipalWeather />
+      <PrincipalWeather city='La Habana' code={1003} temperature='12 Grados' />
       <Button />
     </>
   )
