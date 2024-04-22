@@ -6,7 +6,7 @@ export function Proximo ({ tiempo }) {
         return index === 0
           ? null
           : (
-            <Card fecha={index} key={index} temperature={value.day.maxtemp_c} code={value.day.condition.code} props='flex flex-col justify-center items-center w-full h-full w-1/2 bg-white p-3 rounded-md shadow-md h-40' />
+            <Card fecha={index} key={index} temperature={value.day.maxtemp_c} code={value.day.condition.code} props='flex flex-col justify-center items-center w-full h-full w-1/2 bg-white p-3 rounded-md shadow-md h-40 md:p-5' />
             )
       })}
     </ul>
