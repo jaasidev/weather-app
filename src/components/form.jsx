@@ -5,8 +5,8 @@ export function Form () {
   const inputid = useId()
   const inputref = useRef()
   return (
-    <form className='flex items-center shadow-sm my-3'>
-      <input type='text' id={inputid} ref={inputref} placeholder='Londres, Paris, Brazil...' className='p-1 bg-slate-100 rounded-s-md' />
+    <form className='flex items-center shadow-sm my-3 z-10'>
+      <input type='text' id={inputid} ref={inputref} placeholder='Londres, Paris, Brazil...' className='p-1 bg-slate-100 rounded-s-md outline-none' />
       <button className='p-1 bg-blue-200 rounded-e-md'><Search /></button>
     </form>
   )
