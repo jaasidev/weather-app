@@ -6,7 +6,7 @@ import result from './mooks/response.json'
 function App () {
   return (
     <>
-      <PrincipalWeather code={result.current.condition.code} temperature={`${result.location.region},${result.location.country}`} isday={result.current.is_day} />
+      <PrincipalWeather code={result.current.condition.code} city={`${result.location.region},${result.location.country}`} isday={result.current.is_day} temperature={`${result.current.temp_c}C`} props='bg-white p-2 rounded-lg min-h-96 flex items-center shadow-md flex flex-col' />
       <Button />
     </>
   )
