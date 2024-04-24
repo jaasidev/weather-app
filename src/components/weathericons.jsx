@@ -1,8 +1,6 @@
-function Day ({ day }) {
-  return day === 'day'
-    ? <svg
-        version='1.1' className='lg:w-full max-h-72 lg:max-h-[400px] text-yellow-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' enable-background='new 0 0 96 96'
-      >
+function Day () {
+  return (
+    <svg version='1.1' className='lg:w-full max-h-72 lg:max-h-[400px] text-yellow-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' enable-background='new 0 0 96 96'>
       <g id='Base' display='none' />
       <g id='Dibujo'>
         <path d='M62.142,35.858c0.512,0,1.024-0.195,1.414-0.586l2.829-2.829c0.781-0.781,0.781-2.047,0-2.828
@@ -19,8 +17,8 @@ function Day ({ day }) {
    S55.72,34,48,34z M48,58c-5.514,0-10-4.486-10-10s4.486-10,10-10s10,4.486,10,10S53.514,58,48,58z'
         />
       </g>
-      </svg>
-    : <svg className='text-blue-800 lg:w-full max-h-72 lg:max-h-[400px]' version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' enable-background='new 0 0 96 96' fill='currentColor'><g id='SVGRepo_bgCarrier' stroke-width='0' /><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' /><g id='SVGRepo_iconCarrier'> <g id='Base' display='none'> </g> <g id='Dibujo'> <path d='M60,46c-5.514,0-10-4.486-10-10c0-1.104-0.896-2-2-2c-7.72,0-14,6.28-14,14s6.28,14,14,14c7.72,0,14-6.28,14-14 C62,46.896,61.104,46,60,46z M48,58c-5.514,0-10-4.486-10-10c0-4.888,3.525-8.969,8.168-9.832 c0.934,5.986,5.677,10.729,11.664,11.664C56.969,54.475,52.889,58,48,58z' /> </g> </g></svg>
+    </svg>
+  )
 }
 function Nublado () {
   return <svg version='1.1' className='lg:w-full max-h-72 lg:max-h-[400px]' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' enable-background='new 0 0 96 96' fill='currentColor'><g id='SVGRepo_bgCarrier' stroke-width='0' /><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' /><g id='SVGRepo_iconCarrier'> <g id='Base' display='none'> </g> <g id='Dibujo'> <g> <path d='M66,40c-0.507,0-1.112,0.079-1.688,0.184C62.218,33.012,55.663,28,48,28c-7.664,0-14.218,5.012-16.312,12.184 C31.112,40.079,30.507,40,30,40c-6.065,0-11,4.935-11,11s4.935,11,11,11h36c6.065,0,11-4.935,11-11S72.065,40,66,40z M66,58H30 c-3.86,0-7-3.141-7-7s3.14-7,7-7c0.277,0,0.723,0.068,1.194,0.162V46c0,1.104,0.896,2,2,2s2-0.896,2-2v-3.226 C36.27,36.524,41.632,32,48,32c6.371,0,11.735,4.529,12.808,10.784V46c0,1.104,0.896,2,2,2c1.105,0,2-0.896,2-2v-1.837 C65.278,44.069,65.726,44,66,44c3.859,0,7,3.141,7,7S69.859,58,66,58z' /> </g> </g> </g></svg>
@@ -266,14 +264,13 @@ const weathericons = [{
   code: 1282,
   time: 'all',
   svg: <Nevando />
-}
-]
+}]
 
-export function Clima ({ codigo, dia, props }) {
+export function Clima ({ codigo, props }) {
   return (
     <div className={`w-full max-h-40 flex items-center justify-center my-3 h-full ${props}`}>
       {weathericons.find((value) => {
-        return value.code === codigo && (value.time === 'all' || ((dia ? 'day' : 'night') === value.time))
+        return value.code === codigo
       }).svg}
     </div>
   )
