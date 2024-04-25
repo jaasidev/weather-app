@@ -14,7 +14,7 @@ export function Principal ({ contenido }) {
         <div className='card-body flex flex-col items-center justify-center'>
           <h2 className='text-[--text-100]  text-5xl sm:text-6xl font-semibold'>{temperature}C°</h2>
           <div className='text-[--text-200] flex items-center justify-center sm:text-xl'>
-            <Ubicacion />
+            <Ubicacion props='text-[--text-100]' />
             <span>{`${region},${country}`}</span>
           </div>
         </div>

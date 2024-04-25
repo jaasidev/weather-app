@@ -1,6 +1,6 @@
-export function Ubicacion () {
+export function Ubicacion ({ props }) {
   return (
-    <svg className='text-gray-800 dark:text-white w-7 h-7' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' viewBox='0 0 24 24'>
+    <svg className={`text-[--bg-100] w-7 h-7 ${props}`} aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' viewBox='0 0 24 24'>
       <path fill-rule='evenodd' d='M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z' clip-rule='evenodd' />
     </svg>
 
@@ -9,7 +9,7 @@ export function Ubicacion () {
 
 export function Search () {
   return (
-    <svg className='w-6 h-6 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' viewBox='0 0 24 24'>
+    <svg className='w-6 h-6 text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' viewBox='0 0 24 24'>
       <path d='M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z' />
       <path fill-rule='evenodd' d='M21.707 21.707a1 1 0 0 1-1.414 0l-3.5-3.5a1 1 0 0 1 1.414-1.414l3.5 3.5a1 1 0 0 1 0 1.414Z' clip-rule='evenodd' />
     </svg>
@@ -20,7 +20,7 @@ export function Search () {
 export function Sunset () {
   return (
     <svg
-      version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' enable-background='new 0 0 96 96'
+      version='1.1' xmlns='http://www.w3.org/2000/svg' className='h-20' viewBox='0 0 96 96' enable-background='new 0 0 96 96' fill='currentColor'
     >
       <g id='Base' display='none' />
       <g id='Dibujo'>
@@ -50,7 +50,7 @@ export function Sunset () {
 
 export function Sunrise () {
   return (
-    <svg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' enable-background='new 0 0 96 96'>
+    <svg version='1.1' xmlns='http://www.w3.org/2000/svg' className='h-20' viewBox='0 0 96 96' enable-background='new 0 0 96 96' fill='currentColor'>
       <g id='Base' display='none' />
       <g id='Dibujo'>
         <g>
@@ -79,7 +79,7 @@ export function Sunrise () {
 export function Vientoico () {
   return (
     <svg
-      version='1.1' viewBox='0 0 96 96' enable-background='new 0 0 96 96'
+      version='1.1' className='h-20' viewBox='0 0 96 96' enable-background='new 0 0 96 96' fill='currentColor'
     >
       <g id='Base' display='none' />
       <g id='Dibujo'>
@@ -104,12 +104,12 @@ export function Vientoico () {
 
 export function Rafaga () {
   return (
-    <svg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' enable-background='new 0 0 96 96' fill='#000000'><g id='SVGRepo_bgCarrier' stroke-width='0' /><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' /><g id='SVGRepo_iconCarrier'> <g id='Base' display='none'> </g> <g id='Dibujo'> <path d='M78.485,31.061l-24.001-6c-0.028-0.007-0.058-0.005-0.086-0.011c-0.089-0.018-0.179-0.029-0.27-0.035 c-0.05-0.004-0.099-0.008-0.149-0.008c-0.102,0.002-0.203,0.014-0.304,0.03c-0.038,0.006-0.076,0.008-0.112,0.017 c-0.131,0.029-0.26,0.07-0.385,0.127c-0.007,0.004-0.014,0.005-0.021,0.008c-0.124,0.058-0.244,0.128-0.357,0.213l-8.8,6.6v-6.424 c1.763-0.774,3-2.531,3-4.576c0-2.757-2.243-5-5-5s-5,2.243-5,5c0,2.045,1.237,3.803,3,4.576v50.424H18c-1.104,0-2,0.896-2,2 s0.896,2,2,2h48c1.104,0,2-0.896,2-2s-0.896-2-2-2H44v-36l8.8,6.6c0.108,0.081,0.229,0.125,0.346,0.181 c0.074,0.035,0.14,0.088,0.218,0.114c0.207,0.069,0.421,0.105,0.635,0.105c0,0,0,0,0.001,0h0c0.006,0,0.012-0.002,0.019-0.002 c0.151-0.002,0.301-0.021,0.448-0.056c0.006-0.001,0.012-0.001,0.018-0.002l24.001-6c0.89-0.223,1.515-1.022,1.515-1.94v-6 C80,32.083,79.375,31.283,78.485,31.061z M52,41.001l-6.667-5l6.667-5V41.001z M42,20.001c0.551,0,1,0.448,1,1s-0.449,1-1,1 s-1-0.448-1-1S41.449,20.001,42,20.001z M56,29.562l8,2v8.877l-8,2V29.562z M76,37.439l-8,2v-6.877l8,2V37.439z' /> </g> </g></svg>
+    <svg version='1.1' fill='currentColor' className='h-20' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' enable-background='new 0 0 96 96'><g id='SVGRepo_bgCarrier' stroke-width='0' /><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' /><g id='SVGRepo_iconCarrier'> <g id='Base' display='none'> </g> <g id='Dibujo'> <path d='M78.485,31.061l-24.001-6c-0.028-0.007-0.058-0.005-0.086-0.011c-0.089-0.018-0.179-0.029-0.27-0.035 c-0.05-0.004-0.099-0.008-0.149-0.008c-0.102,0.002-0.203,0.014-0.304,0.03c-0.038,0.006-0.076,0.008-0.112,0.017 c-0.131,0.029-0.26,0.07-0.385,0.127c-0.007,0.004-0.014,0.005-0.021,0.008c-0.124,0.058-0.244,0.128-0.357,0.213l-8.8,6.6v-6.424 c1.763-0.774,3-2.531,3-4.576c0-2.757-2.243-5-5-5s-5,2.243-5,5c0,2.045,1.237,3.803,3,4.576v50.424H18c-1.104,0-2,0.896-2,2 s0.896,2,2,2h48c1.104,0,2-0.896,2-2s-0.896-2-2-2H44v-36l8.8,6.6c0.108,0.081,0.229,0.125,0.346,0.181 c0.074,0.035,0.14,0.088,0.218,0.114c0.207,0.069,0.421,0.105,0.635,0.105c0,0,0,0,0.001,0h0c0.006,0,0.012-0.002,0.019-0.002 c0.151-0.002,0.301-0.021,0.448-0.056c0.006-0.001,0.012-0.001,0.018-0.002l24.001-6c0.89-0.223,1.515-1.022,1.515-1.94v-6 C80,32.083,79.375,31.283,78.485,31.061z M52,41.001l-6.667-5l6.667-5V41.001z M42,20.001c0.551,0,1,0.448,1,1s-0.449,1-1,1 s-1-0.448-1-1S41.449,20.001,42,20.001z M56,29.562l8,2v8.877l-8,2V29.562z M76,37.439l-8,2v-6.877l8,2V37.439z' /> </g> </g></svg>
   )
 }
 
 export function Water () {
   return (
-    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='#000000'><g id='SVGRepo_bgCarrier' stroke-width='0' /><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' /><g id='SVGRepo_iconCarrier'> <path d='M12,6.36c2,2.58,4,5.87,4,7.64a4,4,0,0,1-8,0c0-1.77,2-5.06,4-7.64M12,3.2S6,10,6,14a6,6,0,0,0,12,0c0-4-6-10.8-6-10.8Z' /> <rect width='24' height='24' fill='none' /> </g></svg>
+    <svg className='h-20' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='currentColor'><g id='SVGRepo_bgCarrier' stroke-width='0' /><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' /><g id='SVGRepo_iconCarrier'> <path d='M12,6.36c2,2.58,4,5.87,4,7.64a4,4,0,0,1-8,0c0-1.77,2-5.06,4-7.64M12,3.2S6,10,6,14a6,6,0,0,0,12,0c0-4-6-10.8-6-10.8Z' /> <rect width='24' height='24' fill='none' /> </g></svg>
   )
 }
