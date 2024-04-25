@@ -7,7 +7,7 @@ export function Principal ({ contenido }) {
   const { code } = contenido.current.condition
   const { region, country } = contenido.location
   return (
-    <section className='flex flex-col bg-[--bg-100] h-[400px] w-full items-center p-2 rounded-lg'>
+    <section className='flex flex-col bg-[--bg-100] h-[400px] w-full items-center p-2 rounded-lg shadow-md sm:col-start-1 sm:col-end-4 sm:row-start-1 sm:row-end-4'>
       <Form />
       <article className='card self-center'>
         <Clima codigo={code} />
