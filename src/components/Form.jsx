@@ -8,6 +8,7 @@ export function Form () {
   const inputref = useRef()
   const handleSubmit = (event) => {
     event.preventDefault()
+    if (inputref.current.value === '' || inputref.current.value === '') return
     fetching(inputref.current.value)
   }
   return (

@@ -1,9 +1,10 @@
 import { Ubicacion } from './icons'
-import { success, error } from '../const/geo'
+import { useStoreResult } from '../const/useStore'
 
 export function Button () {
+  const { fetching } = useStoreResult()
   const handleClick = () => {
-    navigator.geolocation.getCurrentPosition(success, error)
+    fetching('auto:ip')
   }
   return (
     <button onClick={handleClick} className='flex btn-primary justify-center items-center bg-[--accent-100] rounded-full p-5 fixed bottom-4 right-4 lg:bottom-6 lg:right-6 lg:absolute' type='submit'>
