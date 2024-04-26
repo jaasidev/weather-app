@@ -8,7 +8,7 @@ export function Estadisticas ({ contenido }) {
   return (
     <>
       <h2 className=' self-end font-semibold text-xl text-[--text-100] hidden lg:block col-start-5  col-end-13 px-4 row-start-5 row-end-6 w-full'>Estado actual:</h2>
-      <section className='flex flex-col gap-1 w-full sm:col-start-1 sm:col-end-7 sm:row-start-5 sm:row-end-7 sm:self-start lg:row-start-6 lg:row-end-13 lg:col-start-5 lg:col-end-13 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:px-4 lg:gap-4 lg:py-1'>
+      <section className='flex flex-col gap-3 sm:gap-4 mt-1 sm:mt-2 w-full sm:col-start-1 sm:col-end-7 sm:row-start-5 sm:row-end-7 sm:self-start lg:row-start-6 lg:row-end-13 lg:col-start-5 lg:col-end-13 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:px-4 lg:gap-4 lg:py-1'>
         <Item value={`${humidity}%`} title='Humedad:' />
         <Item value={`${wind}mph`} title='Vientos:' />
         <Item value={`${gust}mph`} title='Rafagas:' />
