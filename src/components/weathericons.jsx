@@ -268,6 +268,10 @@ const weathericons = [{
   code: 1063,
   time: 'all',
   svg: <Lloviznando />
+}, {
+  code: 1195,
+  time: 'all',
+  svg: <LLoviendo />
 }]
 
 export function Clima ({ codigo, props }) {
