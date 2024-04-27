@@ -348,7 +348,7 @@ export const useStoreResult = create((set, get) => ({
     }
   },
   fetching: (search) => {
-    const apiCall = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${search}&aqi=no&days=3`
+    const apiCall = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${search}&aqi=no&days=3`
     fetch(apiCall)
       .then(res => {
         if (!res.ok) throw new Error('error en el fetching')
