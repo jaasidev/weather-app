@@ -276,7 +276,7 @@ const weathericons = [{
 
 export function Clima ({ codigo, props }) {
   return (
-    <div className={`w-full max-h-40 flex items-center justify-center my-3 h-full ${props}`}>
+    <div className={`w-full max-h-40 flex items-center justify-center my-3 h-full text-[--text-100] ${props}`}>
       {weathericons.find((value) => {
         return value.code === codigo
       }).svg}
