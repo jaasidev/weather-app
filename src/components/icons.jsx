@@ -113,3 +113,9 @@ export function Water () {
     <svg className='h-20' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='currentColor'><g id='SVGRepo_bgCarrier' strokeWidth='0' /><g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round' /><g id='SVGRepo_iconCarrier'> <path d='M12,6.36c2,2.58,4,5.87,4,7.64a4,4,0,0,1-8,0c0-1.77,2-5.06,4-7.64M12,3.2S6,10,6,14a6,6,0,0,0,12,0c0-4-6-10.8-6-10.8Z' /> <rect width='24' height='24' fill='none' /> </g></svg>
   )
 }
+
+export function CancelIco ({ width, height }) {
+  return (
+    <svg fill='currentColor' viewBox='0 0 36 36' width={width} height={height} version='1.1' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g id='SVGRepo_bgCarrier' strokeWidth='0' /><g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round' /><g id='SVGRepo_iconCarrier'> <title>cancel-line</title> <path class='clr-i-outline clr-i-outline-path-1' d='M18,2A16,16,0,1,0,34,18,16,16,0,0,0,18,2ZM4,18A13.93,13.93,0,0,1,7.43,8.85L27.15,28.57A14,14,0,0,1,4,18Zm24.57,9.15L8.85,7.43A14,14,0,0,1,28.57,27.15Z' /> <rect x='0' y='0' width='36' height='36' fill-opacity='0' /> </g></svg>
+  )
+}
