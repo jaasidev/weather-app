@@ -1,6 +1,6 @@
 export function ItemCard ({ logo, title, valor }) {
   return (
-    <div className=' hidden card lg:flex flex-col items-center justify-center bg-[--bg-100] p-5 border-b-[--primary-200] border-b-[5px] h-[95%]'>
+    <div className='hidden card lg:flex flex-col items-center justify-center bg-[--bg-100] p-5 border-b-[--primary-200] border-b-[5px] h-[95%]'>
       <div className='w-full flex items-start justify-center text-[--text-100]'>
         {logo}
       </div>
