@@ -1,10 +1,10 @@
 import { Ubicacion } from './icons'
-import { useStoreResult } from '../const/useStore'
+import { useContent } from '../const/useContent'
 
 export function Button () {
-  const { fetching } = useStoreResult()
+  const { mutation } = useContent()
   const handleClick = () => {
-    fetching('auto:ip')
+    mutation.mutate('auto:ip')
   }
   return (
     <button onClick={handleClick} aria-label='hidden' className='flex btn-primary justify-center items-center bg-[--accent-100] rounded-full p-5 fixed bottom-4 right-4 lg:bottom-6 lg:right-6 lg:absolute shadow-md' type='submit'>

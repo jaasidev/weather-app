@@ -1,27 +1,23 @@
-import { useEffect } from 'react'
-import { useStoreResult } from '../const/useStore'
+import { useContent } from '../const/useContent'
 import { Principal } from './principal'
 import { Forecast } from './forecast'
 import { Estadisticas } from './estadisticas'
 import { NoResult } from './noresult'
 
 export function Interfaz () {
-  const { result, fetching } = useStoreResult()
-  useEffect(() => {
-    fetching('auto:ip')
-  }, [])
+  const { data, isError, isLoading } = useContent()
   return (
     <>
       {
-      result !== null &&
+      (!isError && !isLoading) &&
         <>
-          <Principal contenido={result} />
-          <Forecast contenido={result} />
-          <Estadisticas contenido={result} />
+          <Principal contenido={data} />
+          <Forecast contenido={data} />
+          <Estadisticas contenido={data} />
         </>
     }
       {
-      result === null &&
+      (isError || isLoading) &&
         <NoResult />
     }
     </>

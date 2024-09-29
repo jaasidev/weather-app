@@ -1,15 +1,15 @@
 import { useId, useRef } from 'react'
-import { useStoreResult } from '../const/useStore'
+import { useContent } from '../const/useContent'
 import { Search } from './icons'
 
 export function Form () {
-  const { fetching } = useStoreResult()
   const searchid = useId()
   const inputref = useRef()
+  const { mutation } = useContent()
   const handleSubmit = (event) => {
     event.preventDefault()
     if (inputref.current.value === '' || inputref.current.value === '') return
-    fetching(inputref.current.value)
+    mutation.mutate(inputref.current.value)
   }
   return (
     <form className='flex items-center shadow-sm z-10' onSubmit={handleSubmit}>
