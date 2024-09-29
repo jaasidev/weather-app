@@ -28,6 +28,7 @@ const fetchMutate = async (search) => {
     })
     .catch((err) => console.error(err))
 }
+
 export function useContent () {
   const queryclient = useQueryClient()
   const { data, isError, isLoading, refetch } = useQuery({ queryKey: ['server'], queryFn: async () => await fetching() })
